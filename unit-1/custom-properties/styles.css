@@ -1,0 +1,214 @@
+/* ========================================
+   TOKENS
+   Define your design decisions here.
+   Everything else in this file should
+   reference these tokens with var().
+   ======================================== */
+:root {
+    /* Colors: at least primary, background, text, accent */
+    --color-primary: #2563eb;   /* strong blue */
+    --color-accent: #f59e0b;    /* warm amber */
+    --color-text: #111827;      /* very dark gray (almost black) */
+    --color-bg: #f9fafb;        /* soft light gray */
+    --color-danger: #dc2626;    /* clear red */
+    --color-success: #16a34a;   /* clean green */
+    --color-card-bg: #ffffff;
+
+    /* Spacing: at least sm, md, lg */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    /* Typography: font family, base size */
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --text-base: 1rem;      /* body */
+    --text-lg: 1.25rem;     /* subheadings */
+    --text-xl: 2rem;        /* headings */
+
+    /* Borders: radius */
+    --radius: 0.375rem;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   RESET
+   A minimal reset so you start clean.
+   ======================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================
+   BASE STYLES
+   Style the body, links, and any raw
+   HTML elements here. Use nesting.
+   ======================================== */
+body {
+    /* font family, color, background, line-height, padding */
+    /* Use clamp() for padding to make it fluid. */
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.5;
+    padding: clamp(1rem, 4vw, 3rem);
+
+    a {
+        /* link color from tokens */
+        color: var(--color-primary);
+        text-decoration: none;
+        &:hover {
+            /* hover color from tokens */
+            color: #1d4ed8;
+        }
+    }
+
+    h1 {
+        font-family: var(--font-heading);
+    }
+    h2 {
+        font-family: var(--font-heading);
+    }
+}
+
+
+/* ========================================
+   NAVIGATION
+   Style .site-nav so students can get
+   back to the homepage.
+   ======================================== */
+.site-nav {
+    /* padding, margin-bottom */
+    padding: 5px;
+    margin-bottom: var(--space-xs); 
+}
+
+/* ========================================
+   BOARD HEADER
+   Style the page header area.
+   ======================================== */
+.board-header {
+    /* text alignment, margin, padding */
+    /* Use clamp() for the h1 font size. */
+    text-align: center;
+    margin-block: clamp(2rem, 6vw, 5rem);
+    padding: clamp(1.5rem, 4vw, 3rem);
+
+    h1 {
+        /* fluid font size */
+        font-family: var(--font-heading);
+        font-size: clamp(2.25rem, 6vw, 4rem);
+        line-height: 1.1;
+        color: var(--color-primary);
+        margin-bottom: var(--space-sm);
+    }
+
+    p {
+        /* muted text color, spacing */
+        max-width: 42rem;
+        margin-inline: auto;
+        margin-top: var(--space-sm);
+        color: #4b5563;
+        font-size: var(--text-lg);
+        line-height: 1.6;
+
+    }
+}
+
+/* ========================================
+   CARD GROUP
+   Each section of cards (This Week,
+   Coming Up, Announcements).
+   ======================================== */
+.card-group {
+    /* margin-bottom using a token */
+    margin-bottom: var(--space-lg);
+
+    h2 {
+        /* section heading styles */
+        font-family: var(--font-heading);
+        font-size: var(--text-xl);
+        color: var(--color-text);
+        margin-bottom: var(--space-md);
+    }
+}
+
+/* ========================================
+   CARDS GRID
+   Layout the .cards container as a
+   responsive grid or flex layout.
+   ======================================== */
+.cards {
+    /* display, gap (use calc to derive from a token), columns */
+    display: grid;
+    gap: calc(var(--space-md) * 1.5);
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+/* ========================================
+   INDIVIDUAL CARD
+   Style each .card article. This is where
+   most of your nesting will happen.
+   ======================================== */
+.card {
+    /* background, padding, border-radius, shadow */
+    /* Use a var() with a fallback value here. */
+    background-color: var(--color-card-bg);
+    padding: var(--space-md);
+    border-radius: var(--radius, 0.5rem);
+    box-shadow: var(--shadow-md);
+    
+
+    .card-tag {
+        /* small label: font-size, padding, background, border-radius */
+        display: inline-block;
+        font-size: var(--text-base);
+        padding: 0.25rem 0.5rem; /* changed padding to be smaller */
+        background-color: var(--color-accent);
+        border-radius: var(--radius);
+        margin-bottom: var(--space-sm);
+        color: #ffffff;
+
+    }
+
+    h3 {
+        /* card title styles */
+        font-family: var(--font-body);
+        margin-bottom: var(--space-xs);
+    }
+
+    p {
+        /* card body text */
+        font-size: var(--text-base);
+        font-family: var(--font-body);
+    }
+
+    .card-meta {
+        /* bottom row: flexbox with space-between */
+        /* style the span and link inside here with nesting */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: var(--space-md);
+    }
+}
+
+/* ========================================
+   FOOTER
+   Style the .board-footer at the bottom.
+   ======================================== */
+.board-footer {
+    /* text alignment, padding, muted color, top border */
+    text-align: center;
+    padding: var(--space-md);
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+    margin-top: var(--space-lg);
+}
