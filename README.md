@@ -1,15 +1,78 @@
 # WDD 331R Practice Site
 
 **Student:** Rebecca Hanks  
-**Semester:** Semester 10 - year 4  
-**Live Site:** [View Site](https://your-username.github.io/your-repo-name/)
+**Semester:** Semester 10 - Year 4  
+
+## Live Site
+
+[View Site](https://your-username.github.io/your-repo-name/)
+
+---
 
 ## About
 
 This repository is my Practice Site for WDD 331R: Advanced CSS.
-Each week I add new pages and styles as I work through the course
-assignments. The site deploys automatically to GitHub Pages on
-every push to main.
+
+The site uses a layered CSS architecture with design tokens, reusable components, and a shared stylesheet bundled with Lightning CSS.
+
+The site automatically deploys to GitHub Pages through GitHub Actions.
+
+---
+
+## Folder Structure
+
+```txt
+css/
+├── base/
+├── components/
+├── layout/
+├── tokens/
+├── utilities/
+└── main.css
+
+dist/
+└── styles.css
+```
+
+- `tokens/` → design tokens like colors and spacing
+- `base/` → reset and HTML element styles
+- `components/` → reusable UI components
+- `layout/` → overall page layout
+- `utilities/` → helper utility classes
+
+---
+
+## Build Tool
+
+This project uses **Lightning CSS** to:
+
+- bundle imported CSS files
+- process native CSS nesting
+- minify production CSS
+
+---
+
+## Commands
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Build CSS:
+
+```bash
+npm run build
+```
+
+Watch CSS during development:
+
+```bash
+npm run watch
+```
+
+---
 
 ## Pages
 

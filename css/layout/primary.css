@@ -17,6 +17,7 @@ main {
 
 main > section {
     margin-bottom: var(--space-xl, 3rem);
+    padding-inline: var(--space-md);
 }
 
 .page-header {

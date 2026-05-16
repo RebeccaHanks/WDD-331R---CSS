@@ -11,7 +11,7 @@
    margin-inline: auto;
 
    padding: var(--space-lg);
-   background: var(--color-surface);
+   background: var(--color-card-bg);
 
    border-radius: var(--radius-card);
    box-shadow: var(--shadow-card);
@@ -36,12 +36,12 @@
 :is(input, textarea, select) {
 
    width: 100%;
-   padding: var(--space-small);
+   padding: var(--space-sm);
    border: 1px solid var(--color-border);
    border-radius: var(--radius-card);
    font: inherit;
    color: var(--color-text);
-   background: var(--color-surface);
+   background: var(--color-card-bg);
 
    &:focus-visible {
       outline: 3px solid var(--color-accent);

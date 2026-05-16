@@ -1,0 +1,25 @@
+/* Color tokens: define all color values for the site.
+   Name by purpose (--color-primary, --color-surface)
+   not appearance (--blue, --light-gray). */
+/* css/tokens/colors.css */
+
+:root {
+    /* Primary Brand Colors */
+    --color-primary: #2563eb;      
+    --color-accent: #f59e0b;       
+
+    /* Text */
+    --color-text: #111827;         
+
+    /* Backgrounds */
+    --color-background: #f9fafb;   
+    --color-card-bg: #ffffff;
+    --color-border: #d1d5db;
+
+    /* Status Colors */
+    --color-danger: #dc2626;       
+    --color-success: #16a34a;   
+
+    /* Interaction */
+    --color-primary-hover: #1d4ed8;
+}

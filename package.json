@@ -1,0 +1,25 @@
+{
+  "name": "wdd-331r---css",
+  "version": "1.0.0",
+  "description": "**Student:** Rebecca Hanks   **Semester:** Semester 10 - year 4   **Live Site:** [View Site](https://your-username.github.io/your-repo-name/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lightningcss --bundle css/main.css -o dist/styles.css --minify",
+    "watch": "lightningcss --bundle css/main.css -o dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RebeccaHanks/WDD-331R---CSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RebeccaHanks/WDD-331R---CSS/issues"
+  },
+  "homepage": "https://github.com/RebeccaHanks/WDD-331R---CSS#readme",
+  "devDependencies": {
+    "lightningcss-cli": "^1.32.0"
+  }
+}

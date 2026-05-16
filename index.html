@@ -3,26 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rehecca Hanks - Practice Site</title>
-    <link rel="stylesheet" href="unit-1/css/main.css">
+    <title>Rebecca Hanks - Practice Site</title>
+    <link rel="stylesheet" href="dist/styles.css">
 </head>
+
 <body>
-    <h1>Rebecca Hanks Practice Site CSS</h1>
-    <p>Hello! My name is Rebecca Hanks. I am majoring in Web Design and Development. The purpose of this site is to practive css for WDD 331R</p>
-    <nav>
-    <h2>Assignments</h2>
-    <ul>
-        <li>
-            <a href="unit-1/custom-properties/index.html">
-                Custom Properties and Nesting
+
+    <nav class="site-nav">
+        <a href="index.html" aria-current="page">Home</a>
+
+        <ul>
+            <li>
+                <a href="unit-1/custom-properties/index.html">
+                    Unit 1
+                </a>
+            </li>
+
+            <li>
+                <a href="unit-2/layered-components/index.html">
+                    Unit 2
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="page-header text-center">
+
+        <h1>Rebecca Hanks Practice Site CSS</h1>
+
+        <p>
+            Hello! My name is Rebecca Hanks. I am majoring in Web Design and Development. The purpose of this site is to practive css for WDD 331R
+        </p>
+
+        <div class="button-group mt-lg">
+
+            <a class="btn primary"
+               href="unit-1/custom-properties/index.html">
+                View Unit 1
             </a>
-        </li>
-        <li>
-            <a href="unit-2/layered-components/index.html">
-                Layered Components
+
+            <a class="btn secondary"
+               href="unit-2/layered-components/index.html">
+                View Unit 2
             </a>
-        </li>
-    </ul>
-</nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="card-group">
+
+            <h2 class="text-center">Assignments</h2>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <div class="card-tag">
+                        Unit 1
+                    </div>
+
+                    <h3>Custom Properties and Nesting</h3>
+
+                    <p>
+                        Practiced CSS custom properties, spacing tokens,
+                        typography tokens, and native CSS nesting.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span>WDD 331R</span>
+
+                        <a href="unit-1/custom-properties/index.html">
+                            View Assignment
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-tag">
+                        Unit 2
+                    </div>
+
+                    <h3>Layered Components</h3>
+
+                    <p>
+                        Built reusable components using layered CSS
+                        architecture including cards, navigation,
+                        forms, utilities, and buttons.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span>WDD 331R</span>
+
+                        <a href="unit-2/layered-components/index.html">
+                            View Assignment
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="page-footer text-center">
+
+        <p>
+            &copy; 2026 Rebecca Hanks • WDD 331R Advanced CSS
+        </p>
+
+    </footer>
+
 </body>
 </html>
