@@ -79,3 +79,20 @@ npm run watch
 - [Home](index.html)
 - [Custom Properties and Nesting](unit-1/custom-properties/index.html)
 - [Layered Components](unit-2/layered-components/index.html)
+
+## Dark Mode Support
+
+This site supports light mode, dark mode, and system theme preferences using modern CSS color tokens and semantic design tokens.
+
+Color tokens are organized in:
+
+- `css/tokens/colors.css`
+- `css/tokens/variables.css`
+
+The color system uses:
+- seed tokens
+- semantic tokens
+- accent ramps
+- `light-dark()` theme switching
+
+Theme selection is controlled through a CSS-based theme toggle component.
