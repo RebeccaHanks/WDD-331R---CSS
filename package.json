@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "lightningcss --bundle css/main.css -o dist/styles.css --minify",
-    "watch": "lightningcss --bundle css/main.css -o dist/styles.css --watch"
+    "watch": "while true; do npm run build; sleep 2; done"
   },
   "repository": {
     "type": "git",
