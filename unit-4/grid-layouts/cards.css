@@ -1,0 +1,37 @@
+.articles-page .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-surface);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+
+}
+.card > div:first-child {
+    height: 150px;
+    background: var(--color-border);
+}
+.card > div:last-child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: var(--space-md);
+
+}
+.card h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.card p {
+    margin-bottom: var(--space-md);
+}
+
+.card a {
+    margin-top: auto;
+}

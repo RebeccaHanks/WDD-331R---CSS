@@ -96,3 +96,6 @@ The color system uses:
 - `light-dark()` theme switching
 
 Theme selection is controlled through a CSS-based theme toggle component.
+
+- [Editorial Layout](unit-4/grid-layouts/editorial.html)
+- [Card Grid](unit-4/grid-layouts/cards.html)
