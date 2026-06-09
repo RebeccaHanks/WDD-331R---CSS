@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Query Demo</title>
+
+    <script src="../../js/theme-preference.js"></script>
+
+    <link rel="stylesheet" href="../../dist/styles.css">
+    <link rel="stylesheet" href="container-demo.css">
+</head>
+<body>
+
+<nav class="site-nav">
+    <a href="../../index.html">Home</a>
+
+    <ul>
+        <li>
+            <a href="../../unit-1/custom-properties/index.html">
+                Unit 1
+            </a>
+        </li>
+
+        <li>
+            <a href="../../unit-2/layered-components/index.html">
+                Unit 2
+            </a>
+        </li>
+
+        <li>
+            <a href="../../unit-3/visual-effects/index.html">
+                Unit 3
+            </a>
+        </li>
+
+        <li>
+            <a href="../grid-layouts/editorial.html">
+                Unit 4
+            </a>
+        </li>
+    </ul>
+
+    <details class="theme-menu">
+        <summary class="theme-control">
+            <span class="visually-hidden">Color scheme</span>
+        </summary>
+
+        <div class="theme-extra"
+             role="group"
+             aria-label="Choose color scheme">
+
+            <label class="theme-control theme-pick"
+                   data-theme-pick="light">
+                <input name="theme-preference"
+                       type="radio"
+                       value="light">
+                <span aria-hidden="true">&#9788;&#65039;</span>
+                <span class="visually-hidden">Light</span>
+            </label>
+
+            <label class="theme-control theme-pick"
+                   data-theme-pick="system">
+                <input name="theme-preference"
+                       type="radio"
+                       value="system"
+                       checked>
+                <span aria-hidden="true">&#9881;&#65039;</span>
+                <span class="visually-hidden">System default</span>
+            </label>
+
+            <label class="theme-control theme-pick"
+                   data-theme-pick="dark">
+                <input name="theme-preference"
+                       type="radio"
+                       value="dark">
+                <span aria-hidden="true">&#127766;</span>
+                <span class="visually-hidden">Dark</span>
+            </label>
+
+        </div>
+    </details>
+</nav>
+
+<header class="page-header text-center">
+    <h1>Container Query Demo</h1>
+
+    <p>
+        This page demonstrates how container queries allow a component to
+        respond to the size of its container instead of the viewport.
+    </p>
+</header>
+
+<main class="demo-layout">
+    <aside class="demo-sidebar">
+        <div class="feature-wrapper">
+            <article class="feature-card">
+                <img src="https://picsum.photos/300/200" alt="Demo image">
+
+                <div>
+                    <h2>Sidebar Card</h2>
+
+                    <p>
+                        This card stays stacked because its container is narrow.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </aside>
+
+    <section class="demo-main">
+        <div class="feature-wrapper">
+            <article class="feature-card">
+                <img src="https://picsum.photos/300/200?2" alt="Demo image">
+
+                <div>
+                    <h2>Main Content Card</h2>
+
+                    <p>
+                        This same card changes layout because its container is wider.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

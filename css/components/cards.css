@@ -56,5 +56,20 @@
 
 }
 
+.home-unit-4 .card-footer {
+   flex-direction: column;
+   align-items: flex-start;
+   gap: var(--space-sm);
+}
+
+.home-unit-4 .assignment-links {
+   display: flex;
+   flex-direction: column;
+   gap: 0.4rem;
+}
+
+.home-unit-4 .assignment-links a {
+   line-height: 1.2;
+}
 
 

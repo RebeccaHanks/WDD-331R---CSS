@@ -79,6 +79,10 @@ npm run watch
 - [Home](index.html)
 - [Custom Properties and Nesting](unit-1/custom-properties/index.html)
 - [Layered Components](unit-2/layered-components/index.html)
+- [Editorial Layout](unit-4/grid-layouts/editorial.html)
+- [Card Grid](unit-4/grid-layouts/cards.html)
+- [Container] (unit-4/advanced/container-demo.html)
+- [Sticky] (unit-4/advanced/sticky-demo.html)
 
 ## Dark Mode Support
 
@@ -99,3 +103,6 @@ Theme selection is controlled through a CSS-based theme toggle component.
 
 - [Editorial Layout](unit-4/grid-layouts/editorial.html)
 - [Card Grid](unit-4/grid-layouts/cards.html)
+
+- [Container] (unit-4/advanced/container-demo.html)
+- [Sticky] (unit-4/advanced/sticky-demo.html)

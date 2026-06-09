@@ -1,0 +1,47 @@
+.sticky-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: start;
+}
+
+.toc {
+    position: sticky;
+    top: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-border, #ddd);
+    border-radius: 12px;
+    background: var(--color-surface, white);
+}
+
+.toc a {
+    display: block;
+    margin-block: 0.5rem;
+}
+
+/*
+Sticky broke when overflow: hidden was added to an ancestor.
+That ancestor became the sticky scroll container, but it did not scroll.
+I fixed it by keeping overflow visible on the wrapper so the sticky sidebar
+can use the page scroll instead.
+*/
+.content-wrapper {
+    overflow: visible;
+}
+
+section {
+    min-height: 80vh;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-border, #ddd);
+}
+
+@media (max-width: 700px) {
+    .sticky-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .toc {
+        position: static;
+    }
+}
