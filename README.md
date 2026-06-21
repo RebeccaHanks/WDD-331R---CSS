@@ -106,3 +106,7 @@ Theme selection is controlled through a CSS-based theme toggle component.
 
 - [Container] (unit-4/advanced/container-demo.html)
 - [Sticky] (unit-4/advanced/sticky-demo.html)
+
+## Typography System
+
+My typography tokens are in `css/tokens/variables.css`. I used a modular type scale with smaller text staying fixed and larger heading sizes using `clamp()` so they resize smoothly across screen widths. I used Inter for body text and Playfair Display for headings through Google Fonts with `display=swap`.
