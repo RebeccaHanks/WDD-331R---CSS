@@ -1,0 +1,10 @@
+.resume-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.resume-section,
+.resume-hero {
+  margin-bottom: 2rem;
+}

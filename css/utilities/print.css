@@ -1,0 +1,47 @@
+@media print {
+.site-nav,
+.page-footer,
+button,
+.contact-page {
+  display: none;
+}
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+
+  .resume-page {
+    max-width: 45em;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .resume-hero,
+  .resume-section,
+  .resume-entry {
+    break-inside: avoid;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  a[href^="#"]::after,
+  a[href^="/"]::after {
+    content: none;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}

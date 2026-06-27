@@ -101,3 +101,37 @@ img {
 header {
     text-align: center;
 }
+
+/* RESUME PAGE */
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: var(--space-sm, 0.75rem);
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: var(--radius-sm, 0.5rem);
+  background: var(--color-surface, #fff);
+  color: var(--color-text, #111);
+}
+
+textarea {
+  field-sizing: content;
+  min-height: 3lh;
+  max-height: 10lh;
+  resize: vertical;
+}
+
+button {
+  padding: var(--space-sm, 0.75rem) var(--space-md, 1rem);
+  border: none;
+  border-radius: var(--radius-sm, 0.5rem);
+  background: var(--color-primary, #006eb6);
+  color: white;
+  cursor: pointer;
+}

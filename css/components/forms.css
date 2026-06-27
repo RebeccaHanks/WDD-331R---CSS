@@ -49,3 +49,22 @@
       border-color: var(--color-primary);
   }
 }
+
+.contact-card {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.checkbox-group input {
+  width: auto;
+}

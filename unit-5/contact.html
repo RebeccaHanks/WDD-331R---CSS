@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Rebecca Hanks</title>
+  <link rel="stylesheet" href="../../dist/styles.css"></head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+        <a href="index.html">Home</a>
+
+        <ul>
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+
+            <li>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </li>
+
+            <li>
+                <a href="unit-1/custom-properties/index.html">Unit 1</a>
+            </li>
+
+            <li>
+                <a href="unit-2/layered-components/index.html">Unit 2</a>
+            </li>
+
+            <li>
+                <a href="unit-3/visual-effects/index.html">Unit 3</a>
+            </li>
+
+            <li>
+                <a href="unit-4/grid-layouts/editorial.html">Unit 4</a>
+            </li>
+        </ul>
+
+        <details class="theme-menu">
+            <summary class="theme-control">
+                <span class="visually-hidden">Color scheme</span>
+            </summary>
+
+            <div class="theme-extra"
+                role="group"
+                aria-label="Choose color scheme">
+
+                <label class="theme-control theme-pick"
+                    data-theme-pick="light">
+
+                    <input name="theme-preference"
+                        type="radio"
+                        value="light">
+
+                    <span aria-hidden="true">&#9788;&#65039;</span>
+
+                    <span class="visually-hidden">
+                        Light
+                    </span>
+
+                </label>
+
+                <label class="theme-control theme-pick"
+                    data-theme-pick="system">
+
+                    <input name="theme-preference"
+                        type="radio"
+                        value="system"
+                        checked>
+
+                    <span aria-hidden="true">&#9881;&#65039;</span>
+
+                    <span class="visually-hidden">
+                        System default
+                    </span>
+
+                </label>
+
+                <label class="theme-control theme-pick"
+                    data-theme-pick="dark">
+
+                    <input name="theme-preference"
+                        type="radio"
+                        value="dark">
+
+                    <span aria-hidden="true">&#127766;</span>
+
+                    <span class="visually-hidden">
+                        Dark
+                    </span>
+
+                </label>
+
+            </div>
+        </details>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-card">
+      <h2>Contact Me</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="updates" name="updates" />
+          <label for="updates">Subscribe to updates</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
